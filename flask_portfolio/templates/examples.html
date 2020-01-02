@@ -63,7 +63,7 @@
   {% for example in examples %}
     <div class="project">
       <h1>{{ example.title }}</h1>
-      <p>{{ example.date_started }}</p>
+      <p>Started on {{ example.date_started }}</p>
       <p>{{ example.description }}</p>
       {% if example.github_link != None %}
         <p>Github: <a href="{{ example.github_link }}">{{ example.github_link }}</a></p>
