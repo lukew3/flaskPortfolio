@@ -1,0 +1,96 @@
+body {
+  background-color: #333333
+}
+a {
+  color: white;
+}
+.navElement{
+  position: fixed;
+  width: 2vh;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3vh;
+  line-height: 3vh;
+  text-align: center;
+
+  overflow-wrap: break-word;
+  text-decoration: none;
+
+  color: #E8E9EB;
+}
+#home {
+  height: 116px;
+  left: 27px;
+  top: 5vh;
+}
+#examples {
+  height: 229px;
+  left: 27.02px;
+  top: 23vh;
+}
+#contact {
+  height: 208px;
+  left: 27.32px;
+  top: 53vh;
+}
+#about {
+  height: 140px;
+  left: 26.33px;
+  top: 80vh;
+}
+
+#accentbox {
+  position: absolute;
+}
+
+#text {
+  position: absolute;
+  width: auto;
+  height: 40vh;
+  right: 10vw;
+  bottom: 20vh;
+}
+
+#pageTitle {
+  font-weight: normal;
+  font-family: Roboto;
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 18vh;
+  height: 20vh;
+  margin: auto;
+}
+
+#pageDescription {
+  font-weight: normal;
+  margin: auto;
+  padding: none;
+  position: relative;
+  width: 30vw;
+  height: 10vw;
+  font-family: Roboto;
+  display: block;
+  color: grey;
+  font-size: 8vh;
+  float: right;
+  text-align: right;
+}
+
+#myPhoto {
+  top: 100vh;
+  height: 60vh;
+  width: 40vh;
+}
+
+#content {
+  position: absolute;
+  top: 100%;
+  left: 5vw;
+  color: white;
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
