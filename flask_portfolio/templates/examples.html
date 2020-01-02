@@ -16,7 +16,6 @@
   #pageDescription {
     color: #CECECE;
   }
-
   #jumpTo {
     font-family: Roboto;
     text-align: center;
@@ -26,7 +25,6 @@
     font-size: 2vh;
     text-align: center;
   }
-
   .jumpDown {
     text-decoration: none;
     color: white;
@@ -34,12 +32,14 @@
   .projectName {
     list-style-type: none;
     padding: 25px;
-    width: 150px;
+    width: 150pt;
     display: inline-block;
   }
-
   .project {
-    padding: 25px;
+    padding: 25pt;
+  }
+  .example_title {
+    font-size: 25pt;
   }
 {% endblock style %}
 
@@ -62,7 +62,7 @@
 
   {% for example in examples %}
     <div class="project">
-      <h1>{{ example.title }}</h1>
+      <h1 class="example_title">{{ example.title }}</h1>
       <p>Started on {{ example.date_started }}</p>
       <p>{{ example.description }}</p>
       {% if example.github_link != None %}
