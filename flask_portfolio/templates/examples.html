@@ -49,15 +49,8 @@
 {% endblock titles %}
 
 {% block content %}
-{% for example in examples %}
-  <div class="project">
-    <h1>{{ example.title }}</h1>
-    <p>{{ example.date_started }}</p>
-    <p>{{ example.description }}</p>
-    <p>Github: <a href="{{ example.github_link }}">{{ example.github_link }}</a></p>
-    <p>Live Site: <a href="{{ example.live_link }}">{{ example.live_link }}</a></p>
-  </div>
-{% endfor %}
+
+
   <div id="content">
     <h1 id="jumpTo">Jump to:</h1>
     <ul id="projectsList">
@@ -67,20 +60,16 @@
         <li class="projectName">My Website</li>
     </ul>
 
-    <div id="pythonLogbook" class="project">
-      <h1>Python Logbook</h1>
-      <p>Date started - 11/16/2019<p>
-      <p>I created the Python Logbook as a way for me to keep track of my thoughts and
-        accomplishments while coding. When I'm at my computer, opening a terminal is super quick
-        and easy, and I wanted to be able to create a logbook entry as quickly as possible
-        without even moving my hands from the keyboard. I made this possible by utilizing a python
-        script that would create a series of folders for me to store my entry in, depending on the date,
-        and then create a file that was named with the time. When I open up the terminal and type "newlog",
-        a series of folders are automatically created in a set directory and the terminal asks me what my
-        entry will be. I quickly type my entry and then enter to save. I can then exit the terminal and then
-        continue on with my work.</p>
-      <p>Github: <a href="https://github.com/lukew3/logbook">https://github.com/lukew3/logbook</a></p>
+  {% for example in examples %}
+    <div class="project">
+      <h1>{{ example.title }}</h1>
+      <p>{{ example.date_started }}</p>
+      <p>{{ example.description }}</p>
+      <p>Github: <a href="{{ example.github_link }}">{{ example.github_link }}</a></p>
+      <p>Live Site: <a href="{{ example.live_link }}">{{ example.live_link }}</a></p>
     </div>
+  {% endfor %}
+
 
     <div id="myWebsite" class="project">
       <h1>My Website</h1>
