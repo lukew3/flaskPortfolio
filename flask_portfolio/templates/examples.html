@@ -65,8 +65,12 @@
       <h1>{{ example.title }}</h1>
       <p>{{ example.date_started }}</p>
       <p>{{ example.description }}</p>
-      <p>Github: <a href="{{ example.github_link }}">{{ example.github_link }}</a></p>
-      <p>Live Site: <a href="{{ example.live_link }}">{{ example.live_link }}</a></p>
+      {% if example.github_link != None %}
+        <p>Github: <a href="{{ example.github_link }}">{{ example.github_link }}</a></p>
+      {% endif %}
+      {% if example.live_link != None %}
+        <p>Live Site: <a href="{{ example.live_link }}">{{ example.live_link }}</a></p>
+      {% endif %}
     </div>
   {% endfor %}
 
