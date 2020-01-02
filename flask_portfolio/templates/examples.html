@@ -49,6 +49,15 @@
 {% endblock titles %}
 
 {% block content %}
+{% for example in examples %}
+  <div class="project">
+    <h1>{{ example.title }}</h1>
+    <p>{{ example.date_started }}</p>
+    <p>{{ example.description }}</p>
+    <p>Github: <a href="{{ example.github_link }}">{{ example.github_link }}</a></p>
+    <p>Live Site: <a href="{{ example.live_link }}">{{ example.live_link }}</a></p>
+  </div>
+{% endfor %}
   <div id="content">
     <h1 id="jumpTo">Jump to:</h1>
     <ul id="projectsList">
@@ -71,7 +80,6 @@
         entry will be. I quickly type my entry and then enter to save. I can then exit the terminal and then
         continue on with my work.</p>
       <p>Github: <a href="https://github.com/lukew3/logbook">https://github.com/lukew3/logbook</a></p>
-
     </div>
 
     <div id="myWebsite" class="project">
