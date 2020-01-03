@@ -26,7 +26,14 @@
 
 {% block content %}
   <div class="formbox">
-      <form method="POST">
+      <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+          <legend>Contact Me</legend>
+          <div>
+            {{ form.name.label }}
+            {{ form.name() }}
+          </div>
 
       </form>
   </div>
