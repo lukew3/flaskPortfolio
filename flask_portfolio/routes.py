@@ -1,7 +1,7 @@
 from flask import render_template, url_for, flash, redirect
-from flask_portfolio import app
+from flask_portfolio import app, db, mail
 from flask_portfolio.models import Example
-
+from flask_mail import Message
 
 @app.route("/")
 @app.route("/home")
@@ -12,6 +12,11 @@ def home():
 def examples():
     examples = Example.query.all()
     return render_template('examples.html', examples=examples)
+
+def send_email():
+    msg = Message('Contact from portfolio', sender='lukew25073@gmail.com', recipients='lukew25073@gmail.com')
+    msg.body = "Message content - {{ messageForm.email }}"
+
 
 @app.route("/contact")
 def contact():
