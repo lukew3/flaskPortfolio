@@ -62,19 +62,20 @@ li {
 #pageTitle {
   font-weight: normal;
   font-family: Roboto;
-  position: relative;
+  position: absolute;
   display: block;
   color: white;
   font-size: calc(35pt + 5vw);
   height: 20vh;
-  margin: auto;
+  top: -50pt;
+  right: 0pt;
 }
 
 #pageDescription {
   font-weight: normal;
   margin: auto;
   padding: none;
-  position: relative;
+  position: absolute;
   width: 30vw;
   height: 10vw;
   font-family: Roboto;
@@ -83,6 +84,8 @@ li {
   font-size: calc(15pt + 4vw);
   float: right;
   text-align: right;
+  top: 60pt;
+  right: 0pt;
 }
 
 #myPhoto {
