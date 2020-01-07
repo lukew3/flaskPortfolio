@@ -54,9 +54,9 @@ li {
 #text {
   position: absolute;
   width: auto;
-  height: 40vh;
-  right: 10vw;
-  bottom: 20vh;
+  height: calc(300pt);
+  top: 200pt;
+  right: 100pt;
 }
 
 #pageTitle {
@@ -65,8 +65,9 @@ li {
   position: absolute;
   display: block;
   color: white;
-  font-size: calc(35pt + 5vw);
-  height: 20vh;
+  font-size: calc(1.7rem + 6vw);
+  width: 70vw;
+  text-align: right;
   top: -50pt;
   right: 0pt;
 }
@@ -76,15 +77,15 @@ li {
   margin: auto;
   padding: none;
   position: absolute;
-  width: 30vw;
-  height: 10vw;
+  width: 40vw;
+  height: auto;
   font-family: Roboto;
   display: block;
   color: grey;
-  font-size: calc(15pt + 4vw);
+  font-size: calc(1rem + 4vw);
   float: right;
   text-align: right;
-  top: 60pt;
+  bottom: 0pt;
   right: 0pt;
 }
 
