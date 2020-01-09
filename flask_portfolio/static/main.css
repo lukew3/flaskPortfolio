@@ -50,43 +50,39 @@ li {
 #accentbox {
   position: absolute;
 }
-
+/* Make text div a percent of the width of the viewscreen and make text fit perfectly in box with % units as font-size*/
 #text {
   position: absolute;
-  width: auto;
-  height: calc(300pt);
-  top: 200pt;
-  right: 100pt;
+  width: 40vmax;
+  height: 25vmax;
+  top: 40%;
+  right: 10%;
 }
 
 #pageTitle {
+  margin: none;
   font-weight: normal;
   font-family: Roboto;
-  position: absolute;
+  position: relative;
   display: block;
   color: white;
   font-size: calc(1.7rem + 6vw);
-  width: 70vw;
+  margin: 0px;
   text-align: right;
-  top: -50pt;
-  right: 0pt;
+  float: right;
+  height: auto;
 }
 
 #pageDescription {
   font-weight: normal;
   margin: auto;
-  padding: none;
-  position: absolute;
-  width: 40vw;
-  height: auto;
+  position: relative;
+  width: 80%;
   font-family: Roboto;
   display: block;
-  color: grey;
   font-size: calc(1rem + 4vw);
   float: right;
   text-align: right;
-  bottom: 0pt;
-  right: 0pt;
 }
 
 #myPhoto {
